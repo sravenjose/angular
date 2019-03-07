@@ -1,0 +1,26 @@
+
+<div class="container-fluid mb-5">
+    <table>    
+<div>
+  <h2>User setup</h2>
+  <div>
+      <div class="form-group">
+    <label>name:
+      <input [(ngModel)]="userData.f_name" placeholder="name"/>
+    </label><br>
+    <label>email:
+      <input [(ngModel)]="userData.f_email" placeholder="email"/>
+    </label><br>
+    <label>pass:
+      <input [(ngModel)]="userData.f_password" placeholder="password"/>
+    </label><br>
+    <label>age:
+      <input [(ngModel)]="userData.f_age" placeholder="age"/>
+    </label><br>
+  </div>
+  <button (click)="addUser()">submit</button>
+</div>
+</div>
+</table>
+</div>
+

@@ -1,0 +1,32 @@
+<br>
+<br>
+<div ng-controller="View4Ctrl">
+
+<div class="col-md-6 offset-md-3">
+<div class="cards" >
+    <h3>Course List</h3>
+        <div ng-repeat="c in courses">
+             <div class="card" style="width: 15rem;"  >
+                             <div class="card-body" >
+                               <button type="button" class="close" aria-label="Close" ng-click="delete(c)">
+                                   <span aria-hidden="true">&times;</span>
+                               </button>
+                               <h5 class="card-title">{{c.name}}</h5> 
+                               <h6 class="card-subtitle mb-2 text-muted">{{c.duration}} hrs</h6>
+                               <p class="card-text">price:Rs{{c.price}} </p>
+                               <!-- <a class="btn btn-outline-secondary" routerLink="/edit/{{course.name}}"> Edit</a> -->
+                        </div>
+            </div>
+        </div>
+ </div>
+ <br>
+ <br>
+ <div > 
+        <button type="button"  class="btn btn-outline-primary " ng-click="redirect()" >Add Course</button>
+</div>
+</div>
+ 
+ 
+
+
+</div>            

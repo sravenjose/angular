@@ -1,0 +1,16 @@
+<form>
+  <h2>Profile Update</h2>
+
+  <div>
+    <label>Name:</label>
+      <input [(ngModel)]="userData.f_name" placeholder="name"/>
+    
+    <label>Password:</label>
+    <input [(ngModel)]="userData.f_password" placeholder="password"/>
+  </div>
+
+  <div>
+    <button (click)="updateUser()">Update</button>
+  </div>
+
+</form>
